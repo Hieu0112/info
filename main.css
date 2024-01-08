@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Fira Sans', sans-serif;
+}
+ul{
+    list-style: none; 
+}
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.grid.wide {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.l-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.main{
+    background: linear-gradient(
+        to top right, rgba(118, 180, 196, 0.748), rgba(168, 214, 185, 0.708)
+        );
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        to top left, rgb(103, 205, 223), rgb(128, 226, 115)
+        );
+    border-radius: 20px;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 1px;
+    padding: 33px;
+    opacity: 1;
+}
+
+.intro-user{
+    display: flex;
+    align-items: start;
+    flex: 0 0 50%;
+}
+
+.intro-user-avt{
+    height: 160px;
+    width: 160px;
+    border-radius:20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.45);
+}
+
+.intro-user-right{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-left: 24px;
+}
+
+.intro-user-right__name{
+    color:rgb(46, 54, 63);
+    font-size: 36px;
+    margin-right: 26px;
+}
+
+.intro-user-right__job{
+    display: flex;
+    margin-top: 8px;
+    color: rgb(75, 75, 82);
+}
+
+.intro-user-right__social{
+    display: inline-flex;
+    font-size: 1rem;
+    list-style: none;
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.intro-user-right__social-icon{
+    margin: 0 8px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+
+#tooltip-icon.facebook:hover{
+    background-color:#3B5999;
+}
+
+#tooltip-icon.tiktok:hover{
+    background-color:rgb(32, 1, 32);
+}
+
+#tooltip-icon.instagram:hover{
+    background-color:#e1306c;
+}
+
+#tooltip-icon.github:hover{
+    background-color:#333;
+}
+
+
+#tooltip-icon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+    border-radius:50%;
+    z-index:2;
+}
+
+.intro-user-right__social i{
+    color: #000;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+
+.intro-user-right__social-icon:hover #tooltip-icon--icon{
+    color:#fff;
+}
+
+.intro-contact{
+    display: flex;
+    align-items: start;
+    flex: 0 0 50%;
+    padding-left: 1.875rem;
+}
+
+.intro-contact-list{
+    list-style: none;
+    margin-top: 18px;
+}
+.intro-contact-list__item{
+    text-align:start ;
+    padding-left: 40px;
+    margin-bottom: 1.2rem;
+    color:rgb(65, 64, 64);
+}
+
+.overhead{
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color:rgb(118, 118, 118);
+}
+
+.sendmail{
+    text-decoration: none;
+    color:rgb(65, 64, 64);
+}
+
+.extends{
+    background: linear-gradient(
+        to left bottom, rgb(166, 37, 221), rgb(128, 226, 115)
+        );
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+    padding:30px;
+    opacity: 1;
+}
+
+.extend-item{
+    margin-bottom:10px;
+}
+
+.extend-item--title-header{
+    margin-bottom: 17px;
+    position: relative;
+    text-align: left;
+}
+
+.extend-item--title-h1{
+    font-size: 35px;
+}
+.extend-item-para{
+    text-align:left;
+    margin-bottom: 30px;
+}
+
+.extend-item--title-body{
+    margin-bottom: 18px;
+    text-align: left;
+    position: relative;
+}
+.extend-item--h3{
+    font-size: 24px;
+}
+
+.slide-users{
+    display: none;
+    width: 100%;
+    padding:30px;
+    background: linear-gradient(
+        to right top, rgb(96, 231, 170), rgb(182, 121, 240)
+        );
+    border-radius:25px;
+    opacity: 0.9;
+    display: flex;
+}
+
+.slide-text{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+.slide-text--title{
+    font-size: 20px;
+}
+.slide-avatar--img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius:22px;
+}
+.slide-text--para{
+    margin-top: 10px;
+}
